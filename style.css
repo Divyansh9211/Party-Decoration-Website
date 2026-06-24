@@ -1,12 +1,62 @@
-/* Footer Container Styles */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0px;
+  padding: 0px;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-color:red;
+  border-radius: 8px;
+  width: 50px;
+}
+
+.logo img {
+  width: 220px;
+}
+
+.searchbox {
+  display: flex;
+  width: 500px;
+  border: 2px solid rgb(202, 197, 197);
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.searchbox input {
+  background: none;
+  border: none;
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+outline: none;
+}
+
+.navicons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner img {
+  Width: 100%;
+  Height: 500px;
+}
+
+/* Footer Container Styles*/
 .party-footer {
-  background-color: #1a1a2e; /* Midnight Blue for an elegant look */
-  color: #e0e0e0; /* Soft white text */
+  background-color: #1a1a2e;
+  /* Midnight Blue for an elegant look */
+  color: #e0e0e0;
+  /* Soft white text */
   font-family: 'Poppins', 'Helvetica Neue', sans-serif;
   padding: 60px 20px 20px;
 }
@@ -28,7 +78,8 @@
 
 /* Headings */
 .footer-section h3 {
-  color: #f4d03f; /* Festive Gold/Champagne color */
+  color: #f4d03f;
+  /* Festive Gold/Champagne color */
   margin-bottom: 20px;
   font-size: 1.4em;
   font-weight: 600;
@@ -60,7 +111,8 @@
 
 .newsletter input {
   padding: 12px;
-  background-color: #16213e; /* Slightly lighter blue */
+  background-color: #16213e;
+  /* Slightly lighter blue */
   border: 1px solid #f4d03f;
   color: #fff;
   border-radius: 4px 0 0 4px;
@@ -75,7 +127,8 @@
 .newsletter button {
   padding: 12px 25px;
   background-color: #f4d03f;
-  color: #1a1a2e; /* Dark text on gold button */
+  color: #1a1a2e;
+  /* Dark text on gold button */
   border: 1px solid #f4d03f;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -92,38 +145,40 @@
   text-align: center;
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #333; /* Subtle line */
+  border-top: 1px solid #333;
+  /* Subtle line */
   font-size: 0.85em;
   color: #888;
 }
 
-.footer-section ul li a{
-    color:#e0e0e0;
-    text-decoration:none;
-    display:inline-block;
-    transition:all 0.3s ease;
+.footer-section ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-.footer-section ul li a:hover{
-    color:#f4d03f;
-    transform:translateX(5px);
+.footer-section ul li a:hover {
+  color: #f4d03f;
+  transform: translateX(5px);
 }
+
 /* Mobile Responsive Footer */
-@media (max-width:768px){
+@media (max-width:768px) {
 
-  .footer-container{
-    flex-direction:column;
+  .footer-container {
+    flex-direction: column;
   }
 
-  .newsletter form{
-    flex-direction:column;
+  .newsletter form {
+    flex-direction: column;
   }
 
   .newsletter input,
-  .newsletter button{
-    width:100%;
-    border-radius:5px;
-    margin-bottom:10px;
+  .newsletter button {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
   }
 
 }
