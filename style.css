@@ -5,29 +5,32 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
 button {
   background: none;
   border: none;
   cursor: pointer;
-  background-color:red;
-  border-radius: 8px;
+  background-color: red;
+  /*border-radius: 20px;*/
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px ;
   width: 50px;
 }
 
 .logo img {
   width: 220px;
+  padding-right: 80px;
 }
 
 .searchbox {
   display: flex;
   width: 500px;
   border: 2px solid rgb(202, 197, 197);
-  border-radius: 10px;
-  justify-content: space-between;
+  border-radius: 25px;
 }
 
 .searchbox input {
@@ -36,20 +39,44 @@ button {
   height: 40px;
   overflow: hidden;
   width: 100%;
-  border-radius: 10px;
-outline: none;
+  outline: none;
+  padding-left: 30px;
 }
 
 .navicons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+gap: 50px;
+align-items: center;
 }
 
 .banner img {
   Width: 100%;
   Height: 500px;
 }
+
+.login{
+  padding-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer Container Styles*/
 .party-footer {
