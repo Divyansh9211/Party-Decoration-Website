@@ -17,13 +17,18 @@ button {
   background-color: red;
   /*border-radius: 20px;*/
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px ;
+  border-bottom-right-radius: 20px;
   width: 50px;
+}
+
+.logo {
+  margin-right: 80px;
 }
 
 .logo img {
   width: 220px;
-  padding-right: 80px;
+  display: block;
+  cursor: pointer;
 }
 
 .searchbox {
@@ -44,20 +49,28 @@ button {
 }
 
 .navicons {
-display: flex;
-gap: 50px;
-align-items: center;
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
 .banner img {
   Width: 100%;
-  Height: 500px;
+  Height: 550px;
 }
 
-.login{
+.login {
   padding-left: 100px;
+  cursor: pointer;
 }
 
+.wishlist {
+  cursor: pointer;
+}
+
+.cart {
+  cursor: pointer;
+}
 
 
 
