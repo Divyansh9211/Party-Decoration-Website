@@ -1,4 +1,4 @@
-# party-decoration-website
+# Party-Decoration-Website
 
 ## *Author* 
 Divyansh Aggarwal
