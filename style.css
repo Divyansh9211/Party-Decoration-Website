@@ -15,7 +15,7 @@ header {
 }
 
 img {
-  width: 150px;
+  width: 160px;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -59,10 +59,10 @@ nav {
   border: 0;
   outline: none;
   width: 85%;
-  font-size: 12px;
+  font-size: 15px;
 }
 
-.nav-right .search-bar i{
+.nav-right .search-bar i {
   font-size: 15px;
   color: #8d8b8b;
   margin-right: 15px;
@@ -85,12 +85,44 @@ nav {
 }
 
 
+
+.login i {
+  margin-bottom: 15px;
+  /* Reduce or increase this value */
+}
+
+.login p {
+  margin: 0;
+  /* Removes the default top and bottom margin */
+}
+
+.wishlist i {
+  margin-bottom: 15px;
+  /* Reduce or increase this value */
+}
+
+.wishlist p {
+  margin: 0;
+  /* Removes the default top and bottom margin */
+}
+
+.cart i {
+  margin-bottom: 15px;
+  /* Reduce or increase this value */
+}
+
+.cart p {
+  margin: 0;
+  /* Removes the default top and bottom margin */
+}
+
+
 .nav-right div {
   margin: 0 12px;
   text-align: center;
 }
 
-.nav-right div p{
+.nav-right div p {
   font-size: 15px;
   font-weight: 700px;
   color: #535252;
