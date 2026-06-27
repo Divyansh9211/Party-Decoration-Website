@@ -1,76 +1,202 @@
 body {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
-}
-
-.btn1 {
-  background: none;
-  border: none;
-  cursor: pointer;
-  background-color: red;
-  /*border-radius: 20px;*/
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 50px;
-}
-
-.logo {
-  margin-right: 80px;
-}
-
-.logo img {
-  width: 220px;
-  display: block;
-  cursor: pointer;
-}
-
-.searchbox {
-  display: flex;
-  width: 500px;
-  border: 2px solid rgb(202, 197, 197);
-  border-radius: 25px;
-}
-
-.searchbox input {
-  background: none;
-  border: none;
-  height: 40px;
-  overflow: hidden;
+header {
+  height: 80px;
   width: 100%;
-  outline: none;
-  padding-left: 30px;
-}
-
-.navicons {
+  background: white;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 100px;
   display: flex;
-  gap: 50px;
   align-items: center;
 }
 
-.banner img {
-  Width: 100%;
-  Height: 550px;
-}
-
-.login {
-  padding-left: 100px;
+img {
+  width: 150px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
-.wishlist {
-  cursor: pointer;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+  margin: 0 auto;
 }
 
-.cart {
-  cursor: pointer;
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.nav-left ul li {
+  list-style: none;
+  display: inline-block;
+  /*to make it in a horizontal line*/
+  margin: 0 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 650;
+  font-style: normal;
+  color: rgb(63, 62, 62);
+  font-size: 15px;
+}
+
+.search-bar {
+  background: #f0eeee;
+  width: 350px;
+  line-height: 40px;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: 85%;
+  font-size: 12px;
+}
+
+.nav-right .search-bar i{
+  font-size: 15px;
+  color: #8d8b8b;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+
+.love {
+  position: relative;
+}
+
+.love span {
+  position: absolute;
+  bottom: 0;
+  color: red;
+  top: -5px;
+  left: 66px;
+  font-size: 11px;
+
+}
+
+
+.nav-right div {
+  margin: 0 12px;
+  text-align: center;
+}
+
+.nav-right div p{
+  font-size: 15px;
+  font-weight: 700px;
+  color: #535252;
+}
+
+.nav-right div i {
+  font-size: 15px;
+  color: #535252;
+}
+
+.nav-left i {
+  font-size: 20px;
+  background-color: #f1efef;
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+}
+
+/*media query*/
+/* media query for mobile screens*/
+@media only screen and (max-width:700px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-left i {
+    display: block;
+  }
+
+  img {
+    width: 130px;
+    margin-right: 10px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0;
+    border-radius: 50px;
+    background: #fff;
+    border: 1px solid #eee;
+  }
+
+  .nav-right div {
+    margin: 0 7px;
+  }
+
+  .nav-right div p {
+    font-size: 10px;
+  }
+}
+
+
+
+/*media query for tablet screens*/
+@media only screen and (max-width:1280px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-left i {
+    display: block;
+  }
+
+
+
+  header {
+    height: 60px;
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0;
+    border-radius: 50px;
+    background: #fff;
+    border: 1px solid #eee;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .carousel {
@@ -126,9 +252,6 @@ body {
   left: calc(67% + 800px);
   opacity: 0;
 }
-
-
-
 
 
 .list .item .content {
@@ -302,10 +425,6 @@ body {
 
 @media screen and (max-width: 999px) {
 
-  header {
-    padding-left: 50px;
-  }
-
   .list .item .content {
     left: 50px;
   }
@@ -322,12 +441,8 @@ body {
 }
 
 @media screen and (max-width: 690px) {
-  header a {
-    font-size: 14px;
-    margin-right: 0;
-  }
 
-  .list     .item .content {
+  .list .item .content {
     top: 40%;
   }
 
@@ -341,7 +456,17 @@ body {
   }
 }
 
-
+.category-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 
