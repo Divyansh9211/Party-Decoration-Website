@@ -3,7 +3,7 @@ var nextBtn = document.querySelector('.next'),
     carousel = document.querySelector('.carousel'),
     list = document.querySelector('.list'), 
     item = document.querySelectorAll('.item'),
-    runningTime = document.querySelector('.carousel .timeRunning') 
+    runningTime = document.querySelector('.carousel .timerunning') 
 
 let timeRunning = 3000 
 let timeAutoNext = 7000
